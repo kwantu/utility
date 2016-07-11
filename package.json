@@ -1,0 +1,42 @@
+{
+  "name": "utility",
+  "version": "0.1.0",
+  "description": "Global utility module - common methods used across other modules",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "browserify index.js --standalone util > dist/utility.js -d",
+    "build-js-min": "browserify -g uglifyify index.js --standalone util > dist/utility.min.js -d",
+    "browserify": "npm run build-js && npm run build-js-min",
+    "docs": "jsdoc2md 'index.js' > docs/index.md",
+    "test-client": "mocha-phantomjs test/client/runner.html",
+    "test": "make test && npm run test-client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgordon01/utility.git"
+  },
+  "keywords": [
+    "kwantu",
+    "utility"
+  ],
+  "author": "Brent Gordon <brentgordon01@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bgordon01/utility/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/bgordon01/utility/issues"
+  },
+  "homepage": "https://github.com/bgordon01/utility#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.4.5",
+    "uglifyify": "^3.0.1"
+  },
+  "dependencies": {
+    "es6-promise": "^3.2.1"
+  }
+}
