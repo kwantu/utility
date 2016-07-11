@@ -8,11 +8,11 @@
 
 ### How to install the npm module:
 
-`npm install git+https://github.com/kwantu/utility.git#0.1.1`
+`npm install git+https://github.com/kwantu/utility.git#0.1.0`
 
 ### How to install the bower module:
 
-`bower install https://github.com/kwantu/utility.git#0.1.1`
+`bower install https://github.com/kwantu/utility.git#0.1.0`
 
 ### How to generate the browser based utility module with browserify:
 
